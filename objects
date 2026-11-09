@@ -1,0 +1,37 @@
+// singleton - constructor 
+// object literals 
+const mysum = Symbol("sum");
+const jsuser ={
+    name : "ashutosh",
+    "full name" : "ashutosh kaushik",
+    [mysum] :"my key 1",
+    age : 22,
+    location :"jaipur",
+
+}
+// access the object 
+console.log(jsuser.name);
+console.log(jsuser["age"]);
+console.log(jsuser[mysum]); 
+jsuser.name = "naman "
+//Object.freeze(jsuser);
+
+// function 
+jsuser.greeting = function(){
+    console.log(`hello my name is ${this.name} and my age is ${this.age}`);
+}
+
+console.log(jsuser.greeting());
+
+
+const tinderUser = {}
+tinderUser.id = "123"
+tinderUser.name = "ashutosh"
+tinderUser.isLoggedIn = false
+
+//console.log(constregularUser.fullname?.userFullName.firstName);
+
+const obj = {1:"a",2:"b",3:"c"}
+const obj1 = {1:"a",2:"b",c:"c"}
+const obj3 = Object.assign({},obj,obj1)
+console.log(obj3);
