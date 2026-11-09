@@ -1,0 +1,21 @@
+// this is used for the context context 
+const user= {
+    username : "ashutosh",
+    price : 99,
+    welcomemessage : function(){
+        console.log(`hello ${this.username} and your price is ${this.price}`);
+        console.log(this);
+    }
+}
+user.welcomemessage()
+user.username = "lucky"
+user.welcomemessage();
+
+// arrow function 
+const addtwo =(a,b) =>{
+    return a+b;
+}
+console.log(addtwo(2,3));
+
+// implicit return when we use the return keyword 
+// explicit return when we not return 
