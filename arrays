@@ -1,0 +1,4 @@
+const arr = [1,2,2,3];
+const marvel = ["ironman ","thor","hulk","spiderman"]
+const all = [...arr,...marvel]
+console.log(all);
